@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons " rel="stylkesheet"/>
+        <title>
+
+        </title>
+        <style>
+          *{
+            box-sizing:border-box;
+          }
+          html,body{
+            margin:0;
+            padding:0;
+          }
+          .form-container{
+            background-color: #2d22a3;
+            color:#d1590f;
+            box-shadow: 0px 20px 10px #3a7acf;
+            margin:20px;
+            padding:20px;
+          }
+          .input-cnt{
+            display:flex;
+            margin-bottom: 20px;
+          }
+          .input-cnt:last-child{
+            margin-bottom: 0px;
+          }
+          .input-cnt > i{
+            min-width: 40px;
+            padding: 10px;
+            text-align: center;
+            background-color: lightgrey;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            color:#0076ff;
+            transition-duration: .5s;
+          }
+          .input-cnt:hover > i{
+            background: #0076ff;
+            color:white;
+          }
+          .input-cnt > input[type="text"]{
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            width:100%;
+          }
+          .input-cnt i.textarea-icon{
+            padding: 60px 10px;
+          }
+          .input-cnt > input[type="submit"]{
+            border: none;
+            border-radius: 20px;
+            outline:none;
+            width:75%;
+            margin:0 auto;
+            font-size: 30px;
+            padding:10px;
+            color:#0076ff;
+            background-color: white;
+            transition-duration: 5s;
+          }
+          .input-cnt > input[type="submit"]:hover{
+            color:white;
+            background-color:#0076ff;
+          }
+        </style>
+    </head>
+    <body>
+        <h1 style="text-align:center;">Contact Form</h1>
+        <div class="form-container">
+            <form>
+                <div class="input-cnt">
+                    <i class="Material-icons">Person</i>
+                    <input type="text" placeholder="Enter Your Name" name="name"/>
+                </div>
+                <div class="input-cnt">
+                    <i class="Material-icons">email</i>
+                    <input type="text" placeholder="Enter Your Email" name="email"/>
+                </div>
+                <div class="input-cnt">
+                    <i class="Material-icons textarea-icon">message</i>
+                    <textarea  placeholder="Enter Your Name" name="message"></textarea>
+                </div>
+                <div class="input-cnt">
+                    <input type="submit" />
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
